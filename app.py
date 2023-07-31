@@ -22,7 +22,7 @@ from resources.user import blp as UserBluePrint
 
 def create_app(db_url=None):
     app = Flask(__name__)
-    load_env()
+    load_dotenv()
 
     app.config["PROPAGATE_EXCEPTIONS"] = True
     app.config["API_TITLE"] = "Stores REST API"
